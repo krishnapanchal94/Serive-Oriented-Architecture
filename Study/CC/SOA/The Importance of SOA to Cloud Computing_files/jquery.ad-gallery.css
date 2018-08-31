@@ -1,0 +1,13 @@
+.ad-gallery{width:356px;height:180px}
+.ad-gallery,.ad-gallery *{margin:0;padding:0}
+.ad-gallery .ad-image-wrapper{height:180px;position:relative;overflow:hidden}
+.ad-gallery .ad-image-wrapper .ad-loader{position:absolute;z-index:10;top:48%;left:48%;border:1px solid #CCC}
+.ad-gallery .ad-image-wrapper .ad-image{position:absolute;overflow:hidden;top:0;left:0;z-index:9}
+.ad-gallery .ad-image-wrapper .ad-image a img{border:0}
+.ad-gallery .ad-nav .ad-thumbs{position:relative;height:115px;color:#fff;z-index:220;opacity:.7;filter:alpha(opacity=70);overflow:hidden;padding:3px}
+.ad-gallery .ad-thumbs .ad-thumb-list{list-style:none}
+.ad-gallery .ad-thumbs li{padding:3px}
+.ad-gallery .ad-thumbs li a{display:block}
+.ad-gallery.ad-thumbs li a img{border:3px solid #CCC;display:block}
+.ad-gallery .ad-thumbs li a.ad-active img{border:3px solid #616161}
+.ad-preloads{position:absolute;left:-9000px;top:-9000px}

@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://www.servicetechmag.com/I87/1214-3 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="A monthly online IT magazine dedicated to service technology innovation and practice, including SOA, Cloud Computing, Big Data, Service-Orientation, the Semantic Web.">
+	<meta name="keywords" content="SOA, Cloud Computing, Big Data, Service-Orientation, Service-Oriented Architecture, REST, Web Services, Semantic Web">
+	
+
+	<title>The Importance of SOA to Cloud Computing</title>
+
+	
+	<meta property="og:title" content="Service Technology Magazine">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://servicetechmag.com/">
+	<meta property="og:image" content="http://servicetechmag.com/system/application/images/open_graph_logo_stm.jpg">
+	<meta property="og:image:url" content="http://servicetechmag.com/system/application/open_graph_logo_stm.jpg">
+	<meta property="og:image:secure_url" content="https://www.securewebexchange.com/arcitura.com/workshop_editor/static/images/open_graph_logo_stm.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:site_name" content="Service Technology Magazine">
+	<meta property="og:description" content="A monthly online IT magazine dedicated to service technology innovation and practice, including SOA, Cloud Computing, Big Data, Service-Orientation, the Semantic Web.">
+	<link rel="stylesheet" type="text/css" href="./The Importance of SOA to Cloud Computing_files/css">
+	<link type="text/css" rel="stylesheet" href="./The Importance of SOA to Cloud Computing_files/article.css">
+	<link type="text/css" rel="stylesheet" href="./The Importance of SOA to Cloud Computing_files/jquery.ad-gallery.css">
+	
+	<!--jQuery-->
+	<script type="text/javascript" async="" src="./The Importance of SOA to Cloud Computing_files/ga.js"></script><script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/jquery-1.6.js"></script>
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/jquery.ad-gallery.js"></script>
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/jsapi"></script>
+
+	<!--<script type="text/javascript" src="/system/application/javascript/mouseover.js"></script>-->
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/mouseoverthumb.js"></script>
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/subheader_adds.js"></script>
+	
+	<!--Preview Images in articles-->
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/debounce.js"></script>
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/preview_image.js"></script>
+	
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/photo_rotate.js"></script>
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/topbar.js"></script>
+	<script type="text/javascript" src="./The Importance of SOA to Cloud Computing_files/bookmarks.js"></script>
+
+	<script type="text/javascript">
+		/* Google Search */	
+		google.load('search', '1');
+		google.setOnLoadCallback(function() {
+			google.search.CustomSearchControl.attachAutoCompletion( '006235310696854312197:ihyhuor9i2e', document.getElementById('q'), 'cse-search-box');
+		}); 
+
+		//Analytics
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-40419909-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script><script src="./The Importance of SOA to Cloud Computing_files/saved_resource" type="text/javascript"></script><link href="./The Importance of SOA to Cloud Computing_files/default+en_GB.css" type="text/css" rel="stylesheet"><script src="./The Importance of SOA to Cloud Computing_files/default+en_GB.I.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" language="javascript" src="./The Importance of SOA to Cloud Computing_files/niftyplayer.js"></script>
+<style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gscsep_a{display:none}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 2px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+	<tbody><tr>
+    	<td align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="1400" align="center" class="image_shift">
+            	
+                <!-- top bar -->
+                <tbody><tr><td height="30" align="right" valign="middle" id="topBar" colspan="2"><div id="topbar_left">
+    <form action="http://www.arcitura.com/search" id="cse_search_box">
+    	<input type="image" id="search" src="./The Importance of SOA to Cloud Computing_files/search.jpg" title="Search">
+    	<input type="text" name="q" id="q" autocomplete="off" size="26" dir="ltr" spellcheck="false" style="outline: none;">
+		<input type="hidden" name="cx" value="015956178803500415130:q6l8gcktxmu">
+		<input type="hidden" name="ie" value="UTF-8">
+    </form>
+</div>
+
+<div id="topbar_right">
+    <ul id="nav">
+		
+		<!--FACEBOOK-->
+		        <li>
+            <img src="./The Importance of SOA to Cloud Computing_files/FaceBook.jpg" alt="Facebook">
+            <ul>
+                <li class="social_media_row_1">
+                    <a href="http://www.facebook.com/Arcitura"> 
+						<img src="./The Importance of SOA to Cloud Computing_files/facebook_logo.gif" id="fb" alt="Arcitura™ IT Certified Professionals Facebook">
+						Arcitura<sup>™</sup> IT Certified Professionals (AITCP)
+					</a>
+                </li>
+                <li class="social_media_row_2">
+                    <a href="https://www.facebook.com/techbks"> 
+						<img src="./The Importance of SOA to Cloud Computing_files/facebook_logo.gif" alt="Prentice Hall Service Technology Series Facebook" id="fb2">
+						Prentice Hall Service Technology Series
+					</a>
+                </li>                  
+            </ul>
+            <div class="clear"></div>
+        </li>
+        
+		<!--TWITTER-->
+				<li>
+            <img src="./The Importance of SOA to Cloud Computing_files/Twitter.jpg" alt="Twitter">
+            <ul>
+                <li class="social_media_row_1">       	
+                	<a href="http://twitter.com/arcitura">                    
+						<img alt="Arcitura™ IT Certified Professionals Twitter" src="./The Importance of SOA to Cloud Computing_files/twitter_logo.gif" id="tw">
+						Arcitura<sup>™</sup> IT Certified Professionals (AITCP)
+					</a>
+                </li>
+                <li class="social_media_row_2">
+                	<a href="http://twitter.com/techbks">                    
+						<img alt="Prentice Hall Service Technology Series Twitter" src="./The Importance of SOA to Cloud Computing_files/twitter_logo.gif" id="tw2">
+						Prentice Hall Service Technology Series
+					</a>
+                </li>                  
+            </ul>
+            <div class="clear"></div>
+        </li>
+        
+		<!--LINKEDIN-->
+				<li>
+            <img alt="LinkedIn" src="./The Importance of SOA to Cloud Computing_files/LinkedIn.jpg">
+            <ul>
+                <li class="social_media_row_1">
+                	<a href="http://www.linkedin.com/groups?gid=3928901">                    
+						<img alt="Arcitura™ IT Certified Professionals Linked-In" src="./The Importance of SOA to Cloud Computing_files/linkedin_logo.gif" id="lin">
+						Arcitura<sup>™</sup> IT Certified Professionals (AITCP)
+					</a>
+                </li>
+                <li class="social_media_row_2">
+                    <a href="http://www.linkedin.com/groups?gid=2954416">                   
+						<img alt="Arcitura™ IT Certified Professionals Linked-In" src="./The Importance of SOA to Cloud Computing_files/linkedin_logo.gif" id="lin2">
+						Prentice Hall Service Technology Series
+					</a>
+               </li>                  
+ 				<li class="social_media_row_3">               		               
+					<a href="http://www.linkedin.com/groups/Service-Technology-Magazine-4357541/about">                   
+						<img alt="Arcitura™ IT Certified Professionals Linked-In" src="./The Importance of SOA to Cloud Computing_files/linkedin_logo.gif" id="lin3">
+					Service Technology Magazine
+					</a>
+			   </li>                  
+           </ul>
+            <div class="clear"></div>
+        </li>
+        
+		<!--YOUTUBE-->
+				<li>
+            <img alt="YouTube" src="./The Importance of SOA to Cloud Computing_files/YouTube.jpg">
+            <ul>
+                <li class="social_media_row_1 shorter_item">
+                	<a href="http://www.youtube.com/arcitura">                	
+						<img alt="YouTube" src="./The Importance of SOA to Cloud Computing_files/youtube_logo.gif" id="yt">
+						Arcitura<sup>™</sup> YouTube Channel
+					</a>
+                </li>                                  
+            </ul>
+            <div class="clear"></div>
+        </li>
+        
+		<!--RSS-->
+				<li>
+            <img alt="RSS Feeed" src="./The Importance of SOA to Cloud Computing_files/RSS.jpg">
+            <ul>
+                <li class="social_media_row_1 shorter_item">
+                	<a href="http://www.servicetechmag.com/system/application/views/rss/servicetechmag_rss.xml">                	
+						<img alt="RSS Feeed" src="./The Importance of SOA to Cloud Computing_files/rss_logo.gif" id="rs">
+						Service Technology Magazine
+					</a>
+                </li>                                  
+            </ul>
+            <div class="clear"></div>
+        </li>
+   	</ul>
+</div>       
+    
+<div id="mylist_box">
+	<select name="mylist" id="mylist"> 
+		<option id="default" selected="selected">&nbsp;&nbsp;&nbsp;Related Sites</option>
+		<option value="http://www.arcitura.com">Arcitura.com</option>
+		<option value="http://www.bigdatapatterns.org">BigDataPatterns.org</option>
+		<option value="http://www.bigdatascienceschool.com">BigDataScienceSchool.com</option>
+		<option value="http://www.cloudpatterns.org">CloudPatterns.org</option>
+		<option value="http://www.cloudschool.com">CloudSchool.com</option>
+		<option value="http://www.serviceorientation.com">ServiceOrientation.com</option>
+		<option value="http://www.servicetechbooks.com">ServiceTechBooks.com</option>
+		<option value="http://www.servicetechmag.com">ServiceTechMag.com</option>
+		<option value="http://www.servicetechspecs.com">ServiceTechSpecs.com</option>
+		<option value="http://www.soapatterns.org">SOAPatterns.org</option>
+		<option value="http://www.soaschool.com">SOASchool.com</option>
+		<option value="http://www.whatiscloud.com">WhatIsCloud.com</option>
+		<option value="http://www.whatisrest.com">WhatIsREST.com</option>
+	</select>
+</div></td></tr>
+                
+                <!-- header -->
+                <tr><td height="180" align="left" valign="middle" id="header" colspan="2">
+		<a class="preview" id="image_preview" alt="/system/application/images/magcovers/big/mag_cover_big_1214.jpg">
+			<img src="./The Importance of SOA to Cloud Computing_files/mag_cover_small_1214.jpg" alt="Service Technology Magazine">
+		</a><a href="http://www.servicetechmag.com/index"><img src="./The Importance of SOA to Cloud Computing_files/stm_logo.png" alt="Service Technology Magazine" class="float_left"></a><!--
+<div id="gallery" class="ad-gallery" style="float:right;">
+	<div id="photo_rotate">
+		<ul>
+						<li id="photo_rotate_1" class="current">
+				<img src="/system/application/images/slider/slide_01.png" alt="slideshow_large"/>
+			</li>
+			<li id="photo_rotate_2" class="">
+				<a target="_blank" href="http://servicetechbooks.com/cloud"><img src="/system/application/images/slider/slide_02.png" alt="slideshow_large"/></a>
+			</li>
+			<li id="photo_rotate_3" class="">
+				<a target="_blank" href="http://arcitura.com/workshops"><img src="/system/application/images/slider/slide_03.png" alt="slideshow_large"/></a>
+			</li>
+			<li id="photo_rotate_4" class="">
+				<a target="_blank" href="http://cloudschool.com/store"><img src="/system/application/images/slider/slide_04.png" alt="slideshow_large"/></a>
+			</li>
+			<li id="photo_rotate_5" class="">
+				<a target="_blank" href="http://soaschool.com/store"><img src="/system/application/images/slider/slide_05.png" alt="slideshow_large"/></a>
+			</li>
+	  </ul>
+	</div>
+	<div id="photo_rotate_trigger"></div>
+</div>
+-->
+
+<!-- THIS SHOULD BE SAVED
+<div id="subheader_adds">
+	<div class="subheader_add first_show">
+		<a href="http://www.rhea-solutions.co.uk/" target="_blank"><img src="/system/application/images/subheader_adds/ad_rhea_stm_2.png" alt="add_1" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.soa.com/" target="_blank"><img src="/system/application/images/subheader_adds/soa_software_mag.jpg" alt="add_2" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.mulesoft.com/" target="_blank"><img src="/system/application/images/subheader_adds/mulesoft.jpg" alt="add_3" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.layer7.com/" target="_blank"><img src="/system/application/images/subheader_adds/layer72.jpg" alt="add_4" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<img src="/system/application/images/subheader_adds/fiorano.png" alt="add_5" usemap="#fiorano_add" />
+		
+		<map name="fiorano_add">
+			<area shape="rect" target="_blank" coords="7,6,239,84" href="http://www.fiorano.com/?src=stm" alt="sym" />
+			<area shape="rect" target="_blank" coords="240,6,680,84" href="http://www.fiorano.com/products/ESB-enterprise-service-bus/Fiorano-ESB-enterprise-service-bus.php?Src=stm" alt="sym" />
+			<area shape="rect" target="_blank" coords="681,6,891,84" href="http://www.fiorano.com/downloads/downloads.php?src=stm" alt="sym" />
+		</map> 
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.parasoft.com/jsp/home.jsp" target="_blank"><img src="/system/application/images/subheader_adds/Virtualize_banner_900px_90px.gif" alt="add_5" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.cloud-council.org/" target="_blank"><img src="/system/application/images/subheader_adds/CSCC-900x90.jpg" alt="add_6" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.t-systems.com/" target="_blank"><img src="/system/application/images/subheader_adds/UK-banner_900.jpg" alt="add_8" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.enable-u.eu/" target="_blank"><img src="/system/application/images/subheader_adds/Ineternational_900x90.jpg" alt="add_10" /></a>
+	</div>
+	
+	<div class="subheader_add">
+		<a href="http://www.rackspace.co.uk/" target="_blank"><img src="/system/application/images/subheader_adds/open-cloud-carousels-900x90-05.png" alt="add_10" /></a>
+	</div>
+</div>--></td></tr>                
+               
+                <!-- main nav -->
+                <tr><td id="mainNav1" colspan="2">
+
+		<a href="http://www.servicetechmag.com/about"><span id="about1"></span></a>
+		<a href="http://www.servicetechmag.com/contributors"><span id="pastContributors1"></span></a>
+		<a href="http://www.servicetechmag.com/issues"><span id="pastIssues2"></span></a>
+		<a href="http://www.servicetechmag.com/howtocontribute"><span id="contribute1"></span></a>
+		<a href="http://www.servicetechmag.com/resources"><span id="resources1"></span></a></td></tr>
+<tr><td style="padding-left:243px; padding-right:243px;" colspan="2">
+<img src="./The Importance of SOA to Cloud Computing_files/Page_Bar_Past issues.png" alt="img"></td></tr>                
+                
+            </tbody></table>
+			<!--CONTENT-->
+			<div id="content_box">
+                <div id="breadcrumbs"><span class="bluebody"><a href="http://www.servicetechmag.com/index" class="link1">ServiceTechMag.com</a> &gt; <a href="http://www.servicetechmag.com/I87/index" class="link1">Issue LXXXVII, November/December 2014</a> &gt; <span class="negate_bluebody">The Importance of SOA to Cloud Computing</span></span></div>
+	
+				<!--LEFT COL-->
+				<div id="left_col">
+					<div id="contributors"><div class="contributor">
+	<a href="http://www.servicetechmag.com/contributors/gabrielamorim"><img src="./The Importance of SOA to Cloud Computing_files/headshot-gamorim.jpg" alt="Gabriel Amorim" class="author_image"></a>
+                        
+	<p class="author_name">Gabriel Amorim</p>
+
+	<p class="bio_title">Biography</p>
+	
+	<p class="bio_content">Gabriel Novais Amorim is a software engineer certified in SOA (SOACP). He has worked for 5 years in large Brazilian companies as a developer. He is currently working on developing SOA integration solutions in the telecommunications market and work daily on SOA solutions developed in Java. The author is a techie in systems analysis and has an MBA in software engineering. He follows with enthusiasm the development of the ideas that underlie service orientation and is adept in the neutrality of technologies promoted by service-oriented architecture.</p>
+	
+	<p class="contributions_title">Contributions</p>
+	<ul class="contributions_list">
+	<li class="list"><a href="http://servicetechmag.com/I87/1214-3" class="bluebodylink">The Importance of SOA to Cloud Computing</a></li>
+	</ul>
+ 
+	<p class="rsstext"><a href="http://servicetechmag.com/system/application/views/contributors_rss/gamorim.xml" class="blackbodylink" target="_parent"><img src="./The Importance of SOA to Cloud Computing_files/rss-icon.jpg" alt="rss"></a>&nbsp;
+	<a href="http://servicetechmag.com/system/application/views/contributors_rss/gamorim.xml" class="blackbodylink" target="_parent">subscribe to this author</a></p>
+</div>	  </div>
+					<p id="bookmarks_title">Bookmarks</p>
+   
+					<ul id="bookmarks_list">
+						<li class="list"><a id="digg_this" href="http://digg.com/" class="bluebodylink">Digg This</a></li>
+						<li class="list"><a id="delicious" href="http://delicious.com/save" class="bluebodylink">De.licio.us</a></li>
+						<li class="list"><a id="slashdot" href="http://slashdot.org/" class="bluebodylink">Slashdot</a></li>
+						<li class="list"><a id="technorati" href="http://www.technorati.com/" class="bluebodylink">Technorati</a></li>
+						<li class="list"><a id="stumbleupon" href="http://www.stumbleupon.com/" class="bluebodylink">StumbleUpon</a> </li>
+						<li class="list"><a id="google_bookmarks" href="http://bookmarks.google.com/" class="bluebodylink">Google Bookmark</a></li>    
+					</ul>
+				</div>
+				<!--END LEFT COL-->
+				
+				<!--RIGHT COL-->
+				<div id="right_col"><!--BEING CONTENT-->
+<div id="header_ribbon"></div>
+<h1>
+	The Importance of SOA to Cloud Computing	<span class="title_notes">
+		Published: December 2, 2014 • Service Technology Magazine Issue LXXXVII
+		<a href="http://www.servicetechmag.com/system/application/views/I87/1214-3.pdf" class="whitebodylink float_right" target="_blank">PDF</a>
+	</span>
+</h1>
+
+<h3>Introduction</h3>
+
+<p>Increasingly, SOA and Cloud Computing are assuming more prominent roles in large organizations for the purpose of operational efficiency and cost reduction. These technologies already left behind the status of emerging technologies to consolidate as mature and proven technologies. It is evident that a growing adoption of service-oriented architectures and cloud platforms is taking place in all market segments. However, little is said, in fact, as SOA and cloud computing are related. Are SOA and Cloud Computing approaches complementary to each other, or should they be used separately? This article will clarify how these technologies are related, beyond the advantages of adopting them together. But before you consider having an IT solution that is SOA- or cloud computing-based, we should conceptualize what they mean.</p>
+
+<p>Cloud Computing provides an abstraction layer between computing resources and its technical implementation details, such as its servers, databases, and networks, in turn enabling computational resources to be used on demand while avoiding efforts in infrastructure management. </p>
+
+<p>In recent years, Cloud Computing is no longer a conceptual model and has become a model adopted by various organizations. Cloud Computing is a broad term that involves virtualization, software, platform- and infrastructure-as-a-service on demand.</p>
+
+<p>Currently, most large organizations still have their own IT infrastructures. However, with the various possibilities offered by cloud computing, this is no longer necessary. With the use of both hardware and software resources on a large scale, providers are able to provide all the necessary processing power at a much lower cost than could be achieved by any organization individually. Furthermore, especially in cases where the use of storage resources and processing vary, it is advisable to use Cloud Computing. This model has been defined as utility computing, which is delivered to users at their need. [REF 1] </p>
+
+<p>SOA is an architectural pattern for the development of distributed systems that transforms resources into software services. Benefits like increased agility and cost savings are already clear for companies around the world, and inevitably, SOA will be the dominant architecture in most large organizations. The adoption of SOA today will improve how IT is able to meet business in the future.</p>
+
+<p>SOA and Cloud Computing can exist separately—neither depends on the other. However, they are complementary and can be very helpful to each other.</p>
+
+<p>Cloud Computing provides a very flexible and scalable platform through processing external services, and not only offers advantages such as low cost, but also provides the ability to connect with customers, partners, and suppliers, as never seen before.</p>
+
+<p>However, without SOA, organizations will face difficulties in using Cloud Computing because of the fact that the applications do not have a solid architectural foundation. The complexity of migrating to the cloud environment will be too great, both conceptually and physically. The high scalability of Cloud Computing comes up against the application architecture and infrastructure available. </p>
+
+<p>To analyze the importance of SOA in the Cloud Computing environment, this paper is organized into three topics. The first presents the characteristics and difficulties of Cloud Computing, with an evaluation of the main difficulties in implementing this approach. In the second topic, the presentation of the features and benefits of SOA is made, explaining the strengths that the adoption of this architecture brings to the company. Finally, the third topic shows the combination of these two technologies in obtaining a complete service solution.</p>
+
+
+<h3>Characteristics and Difficulties of Cloud Computing</h3>
+
+<p>Most companies evaluate or have already evaluated the ability to migrate their infrastructure to the cloud, and many executives and infrastructure managers are excited by the benefits of Cloud Computing. Louis Columbus, quoting results from Gartner Research Group in his article for <i>forbes.com</i>, says that the growth of infrastructure services in the cloud reached 18.5% in 2013, and the average growth through 2017 will continue at around 18%. [REF 2]</p>
+
+<p>Cloud computing brings many benefits to a company, the main one being a decrease in cost and in the responsibility of maintaining the infrastructure necessary for the operation of the company. The cost and responsibility are transferred to specialized companies.</p>
+
+<p>In an article for the <i>Financial Post</i> website, Karen Atkinson says that for small and medium businesses, the "pay-as-you-use" approach is much more attractive than "install-and-own". [REF 3] However, both the Karen Atkinson article and any other literature about cloud computing is possible to see warnings about the risks of migrating a proprietary infrastructure for cloud infrastructure. These risks vary mainly between information security and change management. The job of managing your own infrastructure no longer exists, but it becomes necessary to manage the relationship with your supplier.</p>
+
+<p>Among a lot of obstacles to implement projects of Cloud Computing there are three that deserve special attention:</p>
+
+<ol class="o_list">
+	<li>Standardization of APIs: Due to the short time of existence there is still no standardization of APIs, so each migration adopts procedures who think more appropriate at the time. </li>
+	<li>Vulnerability: Security in data traffic is always a critical threshold, but the migration to Cloud Computing adds even concerns about the physical sharing of applications and data with other companies. </li>
+	<li>Cost: Migrate servers to Cloud Computing is not cheap, requires much time and specialists staff.</li>
+</ol>
+
+<p>Besides these, another great difficulty in migrating to a cloud infrastructure is related to the maturity of the IT architecture of the current organization. </p>
+
+<p>Organizations that have no well-defined architecture often have difficulty even with simple maintenance or updates to internal systems. This low level of maturity generates several difficulties, and companies in this category will certainly not have a smooth transition to the cloud computing model.</p>
+
+
+<h3>Features and Benefits of SOA</h3>
+
+<p>SOA is a software architecture that determines the features that make up an application and should be made available as services that communicate with each other through messages. That way, applications can be developed into small parties, facilitating management of development teams. But SOA is more than that—it is a robust architecture, focused on the integration of systems, whose main benefits are discussed below:</p>
+
+<ul class="w_list">
+	<li>Integration between different platforms: With exchanging XML messages between services is possible to integrate different platforms, such as Java and PHP. The XML language is widely used for data exchange, XML is basically a text file with the data and its meta-information tags.</li>
+	<li>Low coupling: As services are developed to meet a specific demand, the level of cohesion is relatively high, so a program developed for SOA is composed of several parts that are well defined to be accounted for only as functions that operate independently.</li>
+	<li>Code reuse: The low coupling and high cohesion allow each service to be used in several different systems without rework or large efforts of the teams involved.</li>
+	<li>Ease of construction and maintenance: Save time by reusing services and the possibility of change within a point of the system; in case of future maintenance or errors, correction dramatically decreases the time unavailability in the system.</li>
+	<li>Ease distribution of functionalities: It's necessary to disclose the service descriptor, and features will be available to any developer who needs to use them.</li>
+</ul>
+
+
+<h3>The Importance of SOA to Cloud Computing</h3>
+
+<p>Once you understand more about Cloud Computing and SOA, the remainder of this article will focus on the advantages of using these two technologies together and why this union can provide a complete services solution.</p>
+
+<p>"If an organization is interested in Cloud Computing, SOA is especially important. The best and perhaps the only way to prepare an organization to successfully exploit the cloud is transforming its IT infrastructure for internal use SOA." [REF 4]</p>
+
+<p>To take full advantage of a Cloud Computing environment, it is necessary to assess various requirements and make many decisions. However, if the company is already working with SOA, most of these decisions have been made and are working properly.</p>
+
+<p>One of the benefits of adopting SOA is the ability to display horizontal services that span the entire organization. When we think about simply virtualizing our current IT environment, we are thinking of expanding this horizontal view of current services to an off-site server, reducing both costs and workload. Still, thinking about virtualization SOA environment, we get a great profitability due to reuse of services, so that multiple people can use a service while being in the company network.</p>
+
+<p>"By having a flexible and modular approach to the delivery of services, SOA is a basic element in the model of cloud computing. While SOA and Cloud Computing reduce costs for corporations, their main advantage is the improvement in agility it provides, allowing it to respond to the increasing rate of change that occurs in almost all companies around the world." [REF 5]</p>
+
+<p>SOA facilitates the deployment of software-as-a-service to be deployed in the cloud while cloud computing provides processing power on demand so that services are robust and flexible, giving organizations more flexibility in time to meet the operational needs of the same.</p>
+
+<p>The use of SOA and Cloud Computing together brings many benefits, and the implementation of applications under the two approaches should be considered. But it is important to understand that while Cloud Computing is an approach to infrastructure, nothing prevents SOA applications from running on corporate servers. However, beyond the usual infrastructure costs, there's concern about the scalability of the platform.</p>
+
+<p>Cloud Computing ensures infrastructure, including hardware and software, to applications while SOA ensures the delivery of software-as-a-service, considering that the two approaches are complementary and difficulties are resolved by the benefits of the other and vice versa. While cloud computing provides options for deployment and delivery of applications, SOA deals with the base architecture that makes it possible.</p>
+
+<p>One of the main requirements for adoption of cloud computing for businesses is the guarantee of service as well as the prices charged for these services. For this, SOA provides a standard process called "Governance and Services Management" which serves as a basis for the virtualization of the IT environment.</p>
+
+<p>"The immediate benefit of combining SOA and Cloud Computing is time. Reaching out to the cloud for business or technology capabilities allows SOA initiatives to compress time to value. In the longer term, the benefits include improved collaboration, customer satisfaction and business growth. By offering SOA-based business capabilities to the cloud, businesses can improve interactions with business partners and existing customers, and/or generate new revenue streams," says Brenda M. Michelson.</p>
+
+<p>Among the technical benefits related to this combination, we can also mention the architecture of applications, scalability, and development time from SOA to Cloud Computing. However, there are many other benefits that are not only technical, but issues of governance and processes that make managing the environments more connected with issues of corporate business through one of the requirements of SOA that is related to providing improved governance and service management within a cloud environment.</p>
+
+
+<h3>SOA Governance</h3>
+
+<p>It is important to differentiate IT Governance from SOA Governance. While IT governance is focused on managing technology, SOA Governance focuses on managing Business Services. Fred Cummins gave an interesting description of SOA Governance in his article entitled "SOA Governance is not IT Governance Reborn," in which he says that SOA Governance is to manage business services, services for clients, and services to other business partners. Furthermore, in a service-oriented organization, everything the organization should be characterized as a service. A business service usually involves other services directly or indirectly to maintain its capacity and deliver its result. This is the true value of SOA, as well as the business value of SOA, and should be the focus of SOA Governance.</p>
+
+<p>When we talk about Cloud Computing, we are basically defining our architecture as a set of services. These services are interdependent—they communicate with other services. The failure of one of these services can lead to a domino effect on other services and applications that use them, so it is crucial that these services are under appropriate management control as they are created, changed, deleted, and accessed. We need good governance of services to meet this management and reduce risks. Cloud Computing is a relatively new approach and still has little experience in how to implement proper governance services. In the SOA world, although many companies do not properly implement, the service governance is something far more mature.</p>
+
+<p>The value that governance brings is clear when we consider the amount of risk that it removes, but a good understanding of the services, processes, and organization data is necessary in order to properly select approaches and policies and to define the level of monitoring required for each service, given that monitoring generates performance impact. We must choose to monitor only essential services to the business operation to avoid performance problems. </p>
+
+
+<h3>Security in SOA</h3>
+
+<p>Along with the implementation of a Cloud Computing environment, there is a need for well-defined security policies and access control. At this point, the policy of security and access control derived from the SOA architecture will also increase the chances of success.</p>
+
+<p>There are actions that can be taken to ensure that security risks are minimized when dealing with a service-oriented environment. You can create policies that influence development patterns and the way the services are consumed. Examples include mandatory username / password to access URL services, encryption of data exchanged between the client and the server, and the joint work between developers and professionals specialized in information security at development time to identify good practices and key standards to reduce risks, among many other initiatives.</p>
+
+<p>Furthermore, systems must be architected to exploit the advantages of public clouds with resilience. This means that one should not simply transfer the applications to the cloud without due care. You must include safety practices and proper recovery still in the process to operate in the cloud, and carefully evaluate the clauses in these respects. In practice, the responsibility for risk management is shared between the cloud provider and its customers. </p>
+
+
+<h3>BPM</h3>
+
+<p>The change in the business process becomes easier when we have the ability to put what will be changed over time in a configuration layer. Cloud Computing platforms are placed where the processes and services reside, so you can put what may change over time in a layer of the setup process and deal with things that probably have not changed as services. For example, the launch of a new product to market can cause changes in the pricing process, using processes we have the pricing policies in the configuration layer of a process so we would not have to do maintenance on systems for this change. This makes the architecture be able to support a larger number of changes, gaining more flexibility and creating more value to the IT organization.</p>
+
+<p>If well implemented, SOA creates a basis for management strategies of business processes, which in turn influences the appropriate deployment of cloud computing. If the company is currently on SOA, have a way designed to process architecture and information architecture, elements responsible for the foundation technologies, and the integration.</p>
+
+<p>Although SOA was initially sold for the reuse value it would bring or the ability to reuse services between the various systems, one of the most important aspects of SOA is the ability to change business processes without the need for major changes, testing, or implementation. SOA has the ability to promote a flexible architecture, or an architecture that is constructed to change, with the following results:</p>
+
+<ul class="w_list">
+	<li>Greater deployment flexibility with less expenditure of time.</li>
+	<li>Process management infrastructure that optimize the cloud.</li>
+	<li>New models of clouds, both public and private, to improve flexibility of process requirements.</li>
+	<li>Ease in understanding the distributed nature of the cloud, since it leaves completely visible and easy to understand the processes of the organization that were migrated.</li>
+</ul>
+
+
+<h3>Conclusion</h3>
+
+<p>Cloud Computing is a solution for abstraction of physical resources, providing speed, processing power and storage sized and flexibility for changes in the hardware architecture according to demand, while SOA provides ease of software development, low coupling solutions and great possibility reuse of code.</p>
+
+<p>Although both Cloud Computing as SOA have the possibility of independent use, the benefits of an integrated architecture with these two solutions is shown as a largely favorable strategy in the categories of cost, speed of development, ease of maintenance, and governance. This happens due to the unique characteristics of each approach, which end up complementing each other. For example, cloud computing provides infrastructure, development platforms, and applications-as-services, but without bothering to define the architecture and management of applications. SOA provides guidelines, principles, and techniques to the development of services, and strictly defines the architecture of service-oriented systems.</p>
+
+<p>Disadvantages in the use of Cloud Computing without SOA are mostly related to security, management of services developed, and breaking the paradigm of companies that do not have a culture focused on the reuse of code and documentation. Among these issues, the latter appears more difficult to solve because the management of features developed without SOA can become highly complex after a period of migration as the large amount of services developed is likely that duplicate functionality or even maintenance impacting applications that share the same service.</p>
+
+<p>Each approach has its concerns and a focus on certain aspects of an IT solution. With SOA, we can make managing cloud services implement and manage security policies and manage issues with business processes—concerns that are beyond the scope of Cloud Computing.</p>
+
+<p>The combination of both approaches allows the company to focus their efforts on more relevant issues to the business without giving adequate operation and without the organization losing flexibility in system maintenance equipment, while allowing flexibility in the creation of new features.</p>
+
+<p>Each of the presented approaches has values ​​and utilities in different domains, as well as different problems. But the use of both is critical to maximize quality in all aspects of an IT solution, in view of their complementary characteristics to each other. As stated, Cloud Computing provides the infrastructure for an application and SOA architecture and methods to manage the remaining issues for implementing the solution.</p>
+
+<p>While it is possible to use either approach independently with reasonable results, both SOA and Cloud Computing offer several implementation possibilities, and their union is one of them. The use of this solution depends on the current situation of the organization, as well as the maturity of the business and the team involved in the migration of legacy systems. Due to the breadth of the subject, the aim of this paper was to obtain a reference that serves as a starting point to begin further study in order to minimize risks and problems in case of implementation of a SOA in the Cloud Computing model.</p>
+
+
+<h3>References</h3>
+
+<p>[REF 1] MULHOLLAND, A.; DANIELS, R.; HALL, T. The Cloud and SOA: Creating an Architecture for Today and for the Future: HP, 2008. <a class="bluebodylink" href="http://www.hp.com/hpinfo/analystrelations/wp_cloudcomputing_soa_capgemini_hp.pdf" target="_blank">http://www.hp.com/hpinfo/analystrelations/wp_cloudcomputing_soa_capgemini_.pdf</a>
+
+</p><p>[REF 2] COLUMBUS, LOUIS. Gartner Predicts Infrastructure Services Will Accelerate Cloud Computing Growth: Forbes, 2013. <a class="bluebodylink" href="http://www.forbes.com/sites/louiscolumbus/2013/02/19/gartner-predicts-infrastructure-services-will-accelerate-cloud-computing-growth/" target="_blank">http://www.forbes.com/sites/louiscolumbus/2013/02/19/gartner-predicts-infras tructure-services-will-accelerate-cloud-computing-growth/</a></p>
+
+<p>[REF 3] ATKINSON, KAREN. Cloud computing: Why it's good for your bottom line: Special to Financial Post, 2005. <a class="bluebodylink" href="http://business.financialpost.com/2012/10/18/cloud-computing-why-its-good-for-your-bottom-line" target="_blank">http://business.financialpost.com/2012/10/18/cloud-computing-why-its-good-fo r-your-bottom-line</a></p>
+
+<p>[REF 4] MULHOLLAND, A.; DANIELS, R.; HALL, T. The Cloud and SOA: Creating an Architecture for Today and for the Future: HP, 2008. <a class="bluebodylink" href="http://www.hp.com/hpinfo/analystrelations/wp_cloudcomputing_soa_capgemini_hp.pdf" target="_blank">http://www.hp.com/hpinfo/analystrelations/wp_cloudcomputing_soa_capgemini_hp.pdf</a></p>
+
+<p>[REF 5] MULHOLLAND, A.; DANIELS, R.; HALL, T. The Cloud and SOA: Creating an Architecture for Today and for the Future: HP, 2008. <a class="bluebodylink" href="http://www.hp.com/hpinfo/analystrelations/wp_cloudcomputing_soa_capgemini_hp.pdf" target="_blank">http://www.hp.com/hpinfo/analystrelations/wp_cloudcomputing_soa_capgemini_hp .pdf</a></p>
+<div class="clear"></div></div>
+				<!--END RIGHT COL-->
+			
+			</div>
+			<!--END CONTENT-->
+		</td>
+  	</tr>
+</tbody></table>
+
+<div class="image_shift">
+<!-- Footer -->
+<table border="0" cellpadding="0" cellspacing="10" width="100%" align="center" id="footer_wrap">
+	<tbody><tr>
+    	<td align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="1400" align="center">
+            	<tbody><tr>
+                	<td align="center" valign="top" width="880">
+                    	<table border="0" cellpadding="0" cellspacing="10" width="880" align="center" id="footer">
+                             <tbody><tr>
+                                <td align="left" valign="top" width="200">
+                                    <p><a class="whitebodylink" href="http://www.servicetechbooks.com/" target="_parent"><img src="./The Importance of SOA to Cloud Computing_files/stb_logo_1.png" style="float:left; margin-right:10px;" alt="The Prentice Hall Service Technology Series from Thomas Erl">The Prentice Hall Service Technology Series from Thomas Erl</a></p>
+                                </td>
+                                <td align="left" valign="top" width="5" style="border-right:1px solid white">&nbsp;</td>
+                                <td align="center" valign="top">
+                                    <div style="float:left; margin-right:30px; margin-left:20px; text-align:left;">
+                                    <p><a class="whitebodylink" href="http://www.servicetechmag.com/" target="_parent"><b>Home</b></a></p>
+                                    <p><a class="whitebodylink" href="http://www.servicetechmag.com/issues" target="_parent"><b>Past Issues</b></a></p>
+                                    <p><a class="whitebodylink" href="http://www.soabooks.com/" target="_blank"><b>The Book Series</b></a></p>                                
+                                    </div>
+                                   
+                                    <div style="float:left; margin-right:30px; text-align:left;">
+                                      <p><a class="whitebodylink" href="http://www.servicetechmag.com/about" target="_parent"><b>About</b></a></p>
+                                      <p><a class="whitebodylink" href="http://www.servicetechmag.com/howtocontribute" target="_parent"><b>How to Contribute</b></a></p>
+                                      <p><a class="whitebodylink" href="http://www.thomaserl.com/" target="_blank"><b>The Editor</b></a></p>
+                                    </div>
+                                    
+                                    <div style="float:left; text-align:left;">
+                                    <p><a class="whitebodylink" href="http://www.servicetechmag.com/contributors" target="_parent"><b>Contributors</b></a></p>
+                                    <p><a class="whitebodylink" href="http://www.servicetechmag.com/resources" target="_parent"><b>Resources</b></a></p>
+                                    <p><a class="whitebodylink" href="http://www.arcitura.com/" target="_blank"><b>Arcitura<sup>™</sup> Education</b></a></p>
+                                    </div>
+                                </td>
+                                <td align="left" valign="top" width="5" style="border-left:1px solid white">&nbsp;</td>
+                                <td align="left" valign="top" width="200">
+                                    <p><b>Contact Information</b></p>                                    
+                                    
+                                    <p>                                        
+                                        <u>info@servicetechmag.com</u><br>
+                                        <b>Tel:</b> 1-800-579-6582<br>
+                                        <b>Fax:</b> 1-604-904-4465
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr><td colspan="5" align="center" valign="bottom" style="padding-top:5px;">Copyright © Arcitura<sup>™</sup> Education Inc. • Arcitura is a trademark of Arcitura Education Inc.</td></tr>                            
+            			</tbody></table>
+            		</td>
+            	</tr>
+            </tbody></table>
+      	</td>
+  	</tr>
+</tbody></table></div>
+
+
+<table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 160px; display: none; top: 23px; position: absolute; left: 275px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>
