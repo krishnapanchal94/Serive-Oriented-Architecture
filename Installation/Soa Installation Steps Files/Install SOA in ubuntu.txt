@@ -1,0 +1,127 @@
+// Install Oracle in root user 
+// Install other softwares in a normal User
+
+1) Install 'Gdebi packege Installer' from ubuntu software centre.
+2) Install oracle's debian file using Gdebi package installer (right click on the Oracle debian file -> Install using gdebi package installer -> Click Install Package).
+3) Open terminal,
+	/etc/init.d/oracle-xe configure
+		Give port no.: 7070
+		Another port : 1521
+		Give Password that you want : root
+	then again write in terminal,
+		/etc/init.d/oracle-xe enable
+		/etc/init.d/oracle-xe start(It will start oracle database)
+4) Open Run sql command line 
+	SQL> connect system
+	password : root(that you had given while configuring oracle).
+	SQL> show parameter session
+	SQL> show parameter processes
+	SQL> alter system reset sessions scope=spfile sid='*';
+	SQL> alter system set processes=300 scope=spfile;
+	SQL> shutdown immediate 		
+	SQL> startup
+	SQL> show parameter session
+	SQL> show parameter processes
+
+	While 'shutdown immediate' and 'startup', it may show error like "insufficient priviledges" then do nothing. go ahead.
+5) open browser -> write 127.0.0.1:7070/apex in addressbar.
+	It will ask for,
+		UserName : System
+		Password : root(that you had given while configuring oracle).
+	Go to administration -> Database users -> Unlock 'HR' user,
+		Click on it -> Select unlock from dropdown and give any password that you want,
+		e.g. UserName : HR
+		     Password : hr
+	Then logout and login using hr,
+		UserName : HR
+		Password : hr	
+
+// Log into normal user account : 
+// Open pdf given by sir
+// Install Weblogic server
+
+1) change permission of wls1034_linux32 file,
+	chmod 777 (Drag and drop wls1034_linux32 file)
+
+2) Drag and drop wls1034_linux32 into a terminal
+	-> the interface for installation will be opened.
+	-> follow the steps as given in pdf.(From pg no. 8)
+
+// Install RCU as given in pdf
+
+1) Write this in terminal : 	
+
+	set RCU_JDBC_TRIM_BLOCKS=TRUE 
+	echo %RCU_JDBC_TRIM_BLOCKS%	
+
+2) Extract this 'ofm_rcu_linux_11.1.1.4.0_disk1_1of1'.
+	Drag and drop 'rcuHome -> bin -> rcu to terminal, interface will be opened.
+	-> follow the instructions as given in pdf.
+
+// Install SOA Suite
+
+1) Extract 'ofm_soa_generic_11.1.1.4.0_disk1_1of2' and 'ofm_soa_generic_11.1.1.4.0_disk1_2of2(4)', So it will have 5 folders having Disk(1-5).
+
+2) Go to Disk1 in terminal,
+	cd Disk1
+
+3) ./runInstaller -jreLoc /home/(User)/Oracle/Middleware/jdk160_21
+	-> It will open interface for installation.
+	-> Follow the instructions as in pdf.
+	-> In prerequisite checks, click on 'Continue' button and then click 'Next'.
+	-> Follow the instructions as in pdf.
+
+// Create a SOA Domain
+
+1) Go to Oracle -> Middleware -> Oracle_SOA1 -> common -> bin -> config.sh
+
+2) Open it and click on 'Run in terminal'
+
+3) Interface will be opened and follow the instructions as in pdf.
+
+// Install JDeveloper
+
+1) Change permission of 'jdevstudio11114install' using chmod
+
+2) Drag and drop 'jdevstudio11114install' into a terminal
+
+3) Interface will be opened and follow the instructions as in pdf.
+
+// Start Weblogic server
+
+=> /home/hp/Oracle/Middleware/user_projects/domains/startWebLogic.sh -> Click run in terminal -> it will take too much time -> last messasge is "looking up for 11.1.1.... -> Open Browser -> localhost:7001/em/ -> Start Weblogic server,
+
+UserName : weblogic
+Password : welcome1(that you had given while creating SOA domain)
+
+=> It will take too much time in starting because it gives a warning for all packages so for that,
+	-> Log in as Root user
+		- Go to host file chaging its permission(/etc/hosts)
+		- write 127.0.0.1       ubuntu (Here write your laptop name. After @ in the terminal, you will find your laptop name)
+			127.0.1.1       localhost
+
+	-> So now it is not take too much time in starting weblogicserver.
+
+// Add SOAServer to JDeveloper
+
+=> /home/hp/Oracle/Middleware/JDev11gR1PS3/jdeveloper/jdev/bin/jedv.sh -> Click run in terminal -> uncheck : Always propmt for role selection on startup -> It will open JDeveloper interface.
+1) Help -> Check for updates -> Follow instructions given in the pdf from page no. 39(It will install SOA Application in JDeveloper)
+
+2) View -> application server navigator -> right click Application servers -> New Application server -> Select Standalone server -> Next -> Give Connection Name : SOAServer
+Connection Type : WebLogic 10.3 
+	|
+	|
+Username : weblogic
+password : welcome1(while creating SOA domain)
+	|
+	|
+next -> next -> Click on button 'Test Connection' -> next -> finish
+	|
+	|
+SOAServer is added to JDeveloper.
+
+
+
+
+
+Enjoy SOA!!!!!!!!!!!!!!!!!
